@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/sky.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
+
+    <script>
+      const link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi )
+        ? 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/print/pdf.min.css'
+        : 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/print/paper.min.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <style>
+      /* Add custom styling here */
+    </style>
+
+  </head>
+  <body>
+    <div class="reveal">
+
+      <div class="slides">
+        <section>
+          <!-- Each slide is a section -->
+          <h1>Reveal JS Slides</h1>
+        </section>
+      </div>
+
+    </div>
+
+    <script>
+      const MARKED_CDN =
+        'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js'
+      const MARKDOWN_CDN =
+        'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.min.js'
+
+      Reveal.initialize({
+        dependencies: [
+          { src: MARKED_CDN, condition: () => document.querySelector('[data-markdown]') },
+          { src: MARKDOWN_CDN, condition: () => document.querySelector('[data-markdown]') }
+        ],
+        history: true
+      });
+    </script>
+  </body>
+</html>
