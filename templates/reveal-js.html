@@ -1,10 +1,12 @@
 <html>
   <head>
+    <!-- RevealJS dependencies -->
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/sky.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
 
+    <!-- Allows the slides to be printed in a reasonable style -->
     <script>
       const link = document.createElement( 'link' );
       link.rel = 'stylesheet';
@@ -15,8 +17,20 @@
       document.getElementsByTagName('head')[0].appendChild(link);
     </script>
 
+    <!-- Syntax Highlighting -->
+    <!-- TODO: Remove if unnecessary -->
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
     <style>
       /* Add custom styling here */
+
+      /* Align contents of slides to the left; default is center */
+      body > div > div.slides > section {
+        text-align: left;
+      }
     </style>
 
   </head>
